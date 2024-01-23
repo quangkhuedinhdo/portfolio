@@ -7,7 +7,7 @@ body {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     gap: 10px; /* Adjust the gap as needed */
-    margin: 200px 100px 100px 100px;
+    margin: 100px 100px 100px 100px;
   }
   
   .grid-item {
