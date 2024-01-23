@@ -10,9 +10,9 @@ body {
   }
   
   .grid-item {
-    border: 1px solid #ddd; /* Viền để phân biệt các ô */
+    /* border: 1px solid #ddd; /* Viền để phân biệt các ô */
     padding: 10px;
-    text-align: center;
+    text-align: left;
   }
 
 .title {
@@ -21,6 +21,9 @@ body {
     text-align: left;
     line-height: 100%;
     font-family: Fraunces;
+    font-weight: 900;
+    margin-top: 57px;
+    margin-bottom: 40px;
 }
 
 .description {
@@ -29,4 +32,9 @@ body {
     text-align: left;
     font-size: 24px;
     font-family: fraunces;
+    font-weight: 400;
+}
+
+.avatar {
+  width: 122px;
 }
