@@ -5,16 +5,24 @@ body {
 .grid-container {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px; /* Adjust the gap as needed */
     margin: 100px 100px 100px 100px;
   }
   
   .grid-item {
-    /* border: 1px solid #ddd; /* Viền để phân biệt các ô */
+    border: 1px solid #ddd; /* Viền để phân biệt các ô */
     padding: 10px;
     text-align: left;
   }
+
+  .grid-item.two-columns {
+    grid-column: span 2; /* Chiếm 2 cột */
+}
+
+.avatar {
+  width: 122px;
+}
 
 .title {
     color: white;
@@ -34,8 +42,13 @@ body {
     font-size: 24px;
     font-family: fraunces;
     font-weight: 400;
+    margin-bottom: 112px;
 }
 
-.avatar {
-  width: 122px;
+#contact {
+  color: white;
+  opacity: 90%;
+  font-family: fraunces;
+  font-size: 16px;
+  font-weight: 400;
 }
