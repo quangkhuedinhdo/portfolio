@@ -52,3 +52,20 @@ body {
   font-weight: 400;
   margin-top: 112px;
 }
+
+#logo {
+  font-family: Fraunces;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  opacity: 50%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+  color: white;
+  margin: 50px 100px 0 100px
