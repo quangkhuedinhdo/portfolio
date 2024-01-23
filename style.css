@@ -1,5 +1,7 @@
 body {
     background-color: #111111;
+    padding: 0;
+    margin: 0 100px;
 }
 
 .grid-container {
@@ -7,7 +9,7 @@ body {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px; /* Adjust the gap as needed */
-    margin: 50px 100px 50px 100px;
+    margin: 50px 0 50px 0;
   }
   
   .grid-item {
@@ -65,7 +67,18 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  padding: 10px;
   color: white;
-  margin: 50px 100px 0 100px
+  overflow: hidden;
+}
+
+#menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#menu li {
+  display: inline-block;
+  padding: 12px;
+}
