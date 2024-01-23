@@ -42,7 +42,6 @@ body {
     font-size: 24px;
     font-family: fraunces;
     font-weight: 400;
-    margin-bottom: 112px;
 }
 
 #contact {
@@ -51,4 +50,5 @@ body {
   font-family: fraunces;
   font-size: 16px;
   font-weight: 400;
+  margin-top: 112px;
 }
