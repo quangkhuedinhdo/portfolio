@@ -11,7 +11,7 @@ body {
   }
   
   .grid-item {
-    border: 1px solid #ddd; /* Viền để phân biệt các ô */
+    /* border: 1px solid #ddd; /* Viền để phân biệt các ô */
     padding: 10px;
     text-align: left;
   }
