@@ -115,21 +115,22 @@ body {
   .nav-bar {
     height: 0;
     position: absolute;
-    top: 90px;
+    top: 80px;
     right: 0;
     left: 0;
     width: 100%;
     background: linear-gradient(
       to bottom,
       rgba(17, 17, 17, 1) 0%,
-      rgba(17, 17, 17, 1) 85%,
+      rgba(17, 17, 17, 95%) 85%,
       rgba(17, 17, 17, 0%) 100%
     );
     transition: 0.2s;
     overflow: hidden;
+    z-index: 999;
   }
   .nav-bar.active {
-    height: 200px;
+    height: 260px;
   }
   .nav-bar ul {
     display: block;
