@@ -211,6 +211,12 @@ body {
   #contact {
     margin-top: 20px;
   }
+  .title {
+    font-size: 50px;
+  }
+  .description {
+    font-size: 20px;
+  }
 }
 /*TESTIMONIAL*/
 .testimonial-item {
