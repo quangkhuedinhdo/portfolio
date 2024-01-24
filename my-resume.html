@@ -14,6 +14,7 @@
   </head>
   <body>
     <header class="header">
+      <a href="index.html">
       <div class="logo">
         <svg
           width="144"
@@ -29,6 +30,7 @@
           />
         </svg>
       </div>
+    </a>
       <div class="hamburger">
         <div class="line line-1"></div>
         <div class="line line-2"></div>
@@ -164,13 +166,13 @@
     </div>
     </section>
     <script>
+      hamburger = document.querySelector(".hamburger");
+      hamburger.onclick = function() {
+        navBar = document.querySelector(".nav-bar")
+        navBar.classList.toggle("active")
         hamburger = document.querySelector(".hamburger");
-        hamburger.onclick = function() {
-          navBar = document.querySelector(".nav-bar")
-          navBar.classList.toggle("active")
-          hamburger = document.querySelector(".hamburger");
-          hamburger.classList.toggle("active-hamburger")
-        }
-      </script>
+        hamburger.classList.toggle("active-hamburger")
+      }
+    </script>
   </body>
 </html>

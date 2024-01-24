@@ -51,7 +51,7 @@ body {
   font-family: fraunces;
   font-size: 16px;
   font-weight: 400;
-  margin-top: 90px;
+  margin-top: 70px;
 }
 /* HEADER */
 .header {
@@ -98,7 +98,31 @@ body {
 .menu li a.active {
   opacity: 100%;
 }
-
+.btn-group {
+  display: flex;
+  gap: 16px;
+}
+.btn {
+  padding: 12px 24px;
+  border-radius: 99px;
+  border: none;
+  font-family: fraunces;
+  font-size: 16px;
+  background: #FAC231;
+  cursor: pointer;
+}
+.btn a {
+  text-decoration: none;
+  color: #111111;
+}
+.btn.resume-btn a {
+  color: white;
+}
+.btn.resume-btn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #ffffff6e;
+}
 /*MOBILE*/
 @media screen and (max-width: 900px) {
   .hamburger {
