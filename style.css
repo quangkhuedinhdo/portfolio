@@ -2,6 +2,7 @@ body {
   background-color: #111111;
   padding: 0;
   margin: 0 100px;
+  min-width: 375px;
 }
 
 /* HOMEPAGE */
@@ -16,7 +17,7 @@ body {
 
 .grid-item {
   /* border: 1px solid #ddd; /* Viền để phân biệt các ô */
-  padding: 10px;
+  padding: 0;
   text-align: left;
 }
 
@@ -63,30 +64,35 @@ body {
   margin-top: 90px;
 }
 
-#logo {
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  align-items: center;
+  padding-top: 32px;
+}
+
+.logo {
   font-family: Fraunces;
   color: white;
   font-size: 32px;
   font-weight: bold;
   opacity: 50%;
+  display: inline-block;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-  overflow: hidden;
-}
-
-#menu {
+.menu {
   list-style-type: none;
-  margin: 0;
   padding: 0;
-  display: flex;
 }
 
-#menu li a {
+.menu li {
+  width: auto;
+}
+
+.menu li a {
   display: inline-block;
   padding: 12px;
   font-family: fraunces;
@@ -96,7 +102,7 @@ nav {
   opacity: 80%;
 }
 
-#menu li a:hover {
+.menu li a:hover {
   opacity: 100%;
 }
 
