@@ -219,4 +219,8 @@ body {
 }
 .thumbnail-redesign {
   width: 100%;
+  transition: 0.2s;
+}
+.thumbnail-redesign:hover {
+  transform: rotate(-3deg) scale(105%);
 }
