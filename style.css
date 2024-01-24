@@ -22,7 +22,7 @@ body {
 .grid-item.testimonial-item {
   grid-column-start: 4;
   grid-column-end: 5;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 .avatar {
   width: 122px;
@@ -215,7 +215,7 @@ body {
   margin: 0;
 }
 .testimonial-last {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 .thumbnail-redesign {
   width: 100%;
@@ -223,4 +223,191 @@ body {
 }
 .thumbnail-redesign:hover {
   transform: rotate(-3deg) scale(105%);
+}
+/*MY RESUME PAGE*/
+.grid-container.grid-my-resume {
+  grid-template-rows: auto auto auto;
+  column-gap: 70px;
+  row-gap: 50px;
+}
+.grid-item-my-resume {
+  grid-column: span 2; /* Chiếm 2 cột */
+  grid-row-start: 1;
+  grid-row-end: 4;
+  display: flex;
+  flex-direction: column;
+  gap: 24px
+}
+.grid-my-resume {
+  color: white;
+  font-family: fraunces;
+}
+.hr-line {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.15); /* Đường đen dưới cùng, có độ dày 2px */
+}
+.my-resume-part {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.title-and-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.time {
+  display: inline;
+  vertical-align: bottom;
+  color: #FFF;
+  text-align: right;
+  font-family: Fraunces;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 20.8px */
+  opacity: 0.6;
+}
+.title-my-resume {
+  color: #FFF;
+  font-family: Fraunces;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 52px */
+}
+.first-line {
+  color: #FAC231;
+  font-family: Fraunces;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 22.4px */
+}
+.last-line {
+  color: #FFF;
+  font-family: Fraunces;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+}
+.description-my-resume {
+  color: #FFF;
+  font-family: Fraunces;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  opacity: 0.9;
+}
+.grid-item.grid-item-my-resume.education {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.grid-item.grid-item-my-resume.skills {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  height: fit-content;
+}
+.grid-item.grid-item-my-resume.tools {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.grid-item.grid-item-my-resume.clients {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  padding: 40px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+}
+/*1258 my resume*/
+@media screen and (max-width: 1258px) {
+  .title-and-time {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+/*1200 my resume*/
+@media screen and (max-width: 1200px) {
+  .grid-container.grid-my-resume {
+    column-gap: 40px;
+  }
+  .experience {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .grid-item.grid-item-my-resume.education {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .grid-item.grid-item-my-resume.skills {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+  }
+  .grid-item.grid-item-my-resume.tools {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+  }
+  .grid-item.grid-item-my-resume.clients {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+  }
+  .title-and-time {
+    flex-direction: row;
+    align-items: end;
+  }
+}
+/*646 my resume*/
+@media screen and (max-width: 646px) {
+  .grid-item.grid-item-my-resume.skills {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .grid-item.grid-item-my-resume.tools {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .grid-item.grid-item-my-resume.clients {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+}
+/*400 my resume*/
+@media screen and (max-width: 400px) {
+  .grid-container.grid-my-resume {
+    column-gap: 20px;
+    row-gap: 30px;
+  }
+  .title-and-time {
+    flex-direction: column;
+    align-items: start;
+  }
 }
