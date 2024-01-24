@@ -2,11 +2,8 @@ body {
   background-color: #111111;
   padding: 0;
   margin: 0 100px;
-  min-width: 375px;
 }
-
 /* HOMEPAGE */
-
 .grid-container {
   display: grid;
   grid-template-rows: 1fr;
@@ -14,27 +11,22 @@ body {
   gap: 10px; /* Adjust the gap as needed */
   margin: 50px 0 50px 0;
 }
-
 .grid-item {
   /* border: 1px solid #ddd; /* Viền để phân biệt các ô */
   padding: 0;
   text-align: left;
 }
-
 .grid-item.two-columns {
   grid-column: span 2; /* Chiếm 2 cột */
 }
-
 .grid-item.testimonial-item {
   grid-column-start: 4;
   grid-column-end: 5;
   padding-top: 20px;
 }
-
 .avatar {
   width: 122px;
 }
-
 .title {
   color: white;
   font-size: 80px;
@@ -45,7 +37,6 @@ body {
   margin-top: 57px;
   margin-bottom: 40px;
 }
-
 .description {
   color: white;
   opacity: 70%;
@@ -54,7 +45,6 @@ body {
   font-family: fraunces;
   font-weight: 400;
 }
-
 #contact {
   color: white;
   opacity: 90%;
@@ -63,9 +53,7 @@ body {
   font-weight: 400;
   margin-top: 90px;
 }
-
 /* HEADER */
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -73,25 +61,27 @@ body {
   align-items: center;
   padding-top: 32px;
 }
-
 .logo {
   font-family: Fraunces;
   color: white;
   font-size: 32px;
   font-weight: bold;
   opacity: 50%;
-  display: inline-block;
+  display: flex;
 }
-
+.hamburger {
+  display: none;
+}
+.nav-bar ul {
+  display: flex;
+}
 .menu {
   list-style-type: none;
   padding: 0;
 }
-
 .menu li {
   width: auto;
 }
-
 .menu li a {
   display: inline-block;
   padding: 12px;
@@ -99,22 +89,112 @@ body {
   font-size: 24px;
   color: white;
   text-decoration: none;
-  opacity: 80%;
+  opacity: 70%;
+  transition: 0.2s;
 }
-
 .menu li a:hover {
   opacity: 100%;
 }
+.menu li a.active {
+  opacity: 100%;
+}
 
+/*MOBILE*/
+@media screen and (max-width: 900px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: #fefefe;
+    margin: 6px 0;
+    transition: 0.2s;
+  }
+  .nav-bar {
+    height: 0;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(
+      to bottom,
+      rgba(17, 17, 17, 1) 0%,
+      rgba(17, 17, 17, 1) 70%,
+      rgba(17, 17, 17, 0%) 100%
+    );
+    transition: 0.2s;
+    overflow: hidden;
+  }
+  .nav-bar.active {
+    height: 200px;
+  }
+  .nav-bar ul {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0 auto;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .nav-bar.active ul {
+    opacity: 1;
+  }
+  /* Hamburger icon animation */
+  .hamburger.active-hamburger .line-1 {
+    transform: rotate(45deg) translateY(6px);
+    transform-origin: center center;
+  }
+  .hamburger.active-hamburger .line-2 {
+    display: none;
+  }
+  .hamburger.active-hamburger .line-3 {
+    transform: rotate(-45deg) translateY(-6px);
+    transform-origin: center center;
+  }
+  /*MOBILE LAYOUT 900px*/
+  body {
+    margin: 0 40px;
+  }
+  .title {
+    font-size: 60px;
+  }
+  .testimonial-item {
+    margin-top: 120px;
+  }
+  .grid-item.testimonial-item {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    padding-top: 20px;
+    padding-left: 20%;
+  }
+}
+/*MOBILE LAYOUT 440px*/
+@media screen and (max-width: 440px) {
+  body {
+    margin: 0 20px;
+  }
+  .grid-item.two-columns {
+    grid-column: span 4;
+  }
+  .grid-item.testimonial-item {
+    grid-column: span 4;
+    margin: 20px 0 0 0;
+    padding: 0;
+  }
+  #contact {
+    margin-top: 20px;
+  }
+}
+/*TESTIMONIAL*/
 .testimonial-item {
   display: flex;
   flex-direction: column;
 }
-
 .avatar-testimonial {
   width: 58px;
 }
-
 .testimonial-header {
   color: #fff;
   font-family: Fraunces;
@@ -124,7 +204,6 @@ body {
   line-height: normal;
   margin: 12px 0;
 }
-
 .testimonial-quote {
   color: #fff;
   font-family: Fraunces;
@@ -135,11 +214,9 @@ body {
   opacity: 70%;
   margin: 0;
 }
-
 .testimonial-last {
   margin-top: 40px;
 }
-
 .thumbnail-redesign {
   width: 100%;
 }
