@@ -458,6 +458,7 @@ a {
   column-gap: 40px;
   row-gap: 40px;
   margin: 50px 0 50px 0;
+  width: 100%;
 }
 .grid-item-project {
   /* border: 1px solid #ddd; /* Viền để phân biệt các ô */
@@ -472,6 +473,7 @@ a {
   gap: 12px;
   margin-top: 6px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .tag-project {
   display: inline-block;
