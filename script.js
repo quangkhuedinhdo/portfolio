@@ -29,7 +29,7 @@ class Header extends HTMLElement {
     <nav class="nav-bar">
       <ul class="menu">
         <li><a href="index.html" class="home-menu">Home</a></li>
-        <li><a href="#works" class="works-menu">Works</a></li>
+        <li><a href="works.html" class="works-menu">Works</a></li>
         <li><a href="my-resume.html" class="resume-menu">My Resume</a></li>
       </ul>
     </nav>
