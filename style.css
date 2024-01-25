@@ -2,6 +2,8 @@ body {
   background-color: #111111;
   padding: 0;
   margin: 0 100px;
+  color: white;
+  font-family: fraunces;
 }
 /* HOMEPAGE */
 .grid-container {
@@ -443,4 +445,41 @@ body {
     flex-direction: column;
     align-items: start;
   }
+}
+/* WORKS-PAGE */
+.grid-container-3column {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px; /* Adjust the gap as needed */
+  margin: 50px 0 50px 0;
+}
+.grid-item-project {
+  /* border: 1px solid #ddd; /* Viền để phân biệt các ô */
+  padding: 0;
+  text-align: left;
+}
+.grid-item-project.project-1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.grid-item-project a img {
+  width: 100%;
+}
+.tag-group-project {
+  display: flex;
+  gap: 12px;
+  margin-top: 6px;
+  justify-content: center;
+}
+.tag-project {
+  display: inline-block;
+  border-radius: 99px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
 }
