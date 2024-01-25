@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redesign Base.vn Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header-component></header-component>
+    <div class="head-article">
+      <div>
+        <p>✍️ Published: Jan 30, 2024</p>
+        <p class="title title-work">
+          Redesign Base.vn Homepage - Structure Matters
+        </p>
+        <div class="tag-group-project tag-work-page">
+          <div class="tag-project">Redesign</div>
+          <div class="tag-project">SAAS</div>
+          <div class="tag-project">B2B</div>
+        </div>
+      </div>
+      <img src="asset/work-1/project-1-header.png" alt="" />
+    </div>
+    <div class="hr-line hr-project"></div>
+    <!-- Main content -->
+    <section class="main-content-project">
+      <div class="main-content-container">
+        <p class="project-intro">
+          Lorem ipsum dolor sit amet consectetur. Lectus sit nulla sit cras amet
+          ultricies feugiat ultrices. Odio purus non rutrum facilisi in semper
+          ut semper nullam. Tellus ut lectus malesuada senectus eu tristique
+          hendrerit venenatis. Egestas diam dignissim enim vulputate. Interdum
+          praesent adipiscing at ultrices adipiscing lorem viverra diam varius.
+        </p>
+        <p class="content-headline">Lorem ipsum dolor sit amet consectetur.</p>
+        <p class="content-paragraph">
+          Lorem ipsum dolor sit amet consectetur. Justo semper volutpat vel mus
+          diam sed est. Donec et sed pulvinar amet lacus. Morbi commodo arcu
+          tristique pretium id tempus vestibulum felis amet. Pellentesque
+          sagittis id fermentum auctor tincidunt. Non interdum viverra enim
+          egestas interdum. Velit lorem scelerisque nisl sed vitae. Enim congue
+          nullam ut porta turpis maecenas augue pharetra. Et in arcu dolor
+          nulla. Pellentesque at maecenas diam ridiculus tellus leo orci risus.
+          Orci nunc eget risus dui. Pulvinar pellentesque etiam faucibus.
+        </p>
+        <figure>
+            <img src="asset/work-1/placeholder.png" alt="">
+            <figcaption class="image-caption">Lorem ipsum dolor sit amet consectetur. Tortor faucibus velit ultricies quis pellentesque tristique. 
+                Sit feugiat quis commodo tristique cursus aliquam aliquet suspendisse. Fermentum fermentum dictum erat arcu.</figcaption>
+        </figure>
+        <p class="content-paragraph">
+            Lorem ipsum dolor sit amet consectetur. Justo semper volutpat vel mus
+            diam sed est. Donec et sed pulvinar amet lacus. Morbi commodo arcu
+            tristique pretium id tempus vestibulum felis amet. Pellentesque
+            sagittis id fermentum auctor tincidunt. Non interdum viverra enim
+            egestas interdum. Velit lorem scelerisque nisl sed vitae. Enim congue
+            nullam ut porta turpis maecenas augue pharetra. Et in arcu dolor
+            nulla. Pellentesque at maecenas diam ridiculus tellus leo orci risus.
+            Orci nunc eget risus dui. Pulvinar pellentesque etiam faucibus.
+          </p>
+      </div>
+    </section>
+    <script>
+      hamburger = document.querySelector(".hamburger");
+      hamburger.onclick = function () {
+        navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+        hamburger = document.querySelector(".hamburger");
+        hamburger.classList.toggle("active-hamburger");
+      };
+      /*Active trên menu navbar*/
+      active = document.querySelector(".works-menu");
+      active.classList.add("active");
+    </script>
+  </body>
+</html>
