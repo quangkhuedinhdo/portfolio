@@ -601,7 +601,7 @@ figcaption::before {
     margin: 40px 0;
   }
   figcaption {
-    max-width: 300px;
+    max-width: 280px;
   }
   .project-intro {
     font-size: 28px;
