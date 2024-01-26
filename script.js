@@ -37,5 +37,25 @@ class Header extends HTMLElement {
       `;
   }
 }
+//Footer
+class Footer extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `    
+    <footer class="ft">
+    <div class="hr-line footer-line"></div>
+    <div class="footer">
+      <div class="social-icon">
+        <a href="tel:0834105650" class="social"><img src="asset/social/ico-phone.svg" alt=""></a>
+        <a href="mailto:quangkhuedinhdo@gmail.com" class="social"><img src="asset/social/ico-mail.svg" alt=""></a>
+        <a href="https://www.facebook.com/d.d.quangkhue" class="social"><img src="asset/social/ico-facebook.svg" alt=""></a>
+        <a href="https://www.linkedin.com/in/khue-dinh/" class="social"><img src="asset/social/ico-linkedin.svg" alt=""></a>
+      </div>
+      <p>⚒️Crafted by Jay Dinh, 2024</p>
+    </div>
+  </footer>
+      `;
+  }
+}
 //Register Component
 customElements.define("header-component", Header);
+customElements.define("footer-component", Footer);

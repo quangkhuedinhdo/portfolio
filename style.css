@@ -116,6 +116,7 @@ a {
   font-size: 16px;
   background: #FAC231;
   cursor: pointer;
+  transition: 0.2s;
 }
 .btn a {
   text-decoration: none;
@@ -457,7 +458,7 @@ a {
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 40px;
   row-gap: 40px;
-  margin: 50px 0 50px 0;
+  margin: 50px 0 70px 0;
   width: 100%;
 }
 .grid-item-project {
@@ -511,6 +512,10 @@ a {
   margin-top: 50px;
   align-items: center;
   justify-items: start;
+}
+.publish-date {
+  font-weight: 300;
+  font-size: 14px;
 }
 .title.title-work {
   font-size: 64px;
@@ -618,4 +623,38 @@ figcaption::before {
   .content-headline {
     margin: 24px 0 16px 0;
   }
+}
+.other-project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content-headline.other {
+  margin: 0;
+}
+.grid-container-3column.other-projects {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.btn:hover {
+  transform: scale(105%) rotate(-3deg);
+}
+.hr-line.footer-line {
+  opacity: 50%;
+}
+.social-icon {
+  margin-top: 16px;
+}
+.social {
+  padding: 8px;
+  opacity: 50%;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+.footer p {
+  font-size: 14px;
+  font-weight: 300;
+  opacity: 50%;
 }
