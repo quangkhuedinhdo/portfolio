@@ -50,7 +50,7 @@ class Footer extends HTMLElement {
         <a href="https://www.facebook.com/d.d.quangkhue" class="social"><img src="asset/social/ico-facebook.svg" alt=""></a>
         <a href="https://www.linkedin.com/in/khue-dinh/" class="social"><img src="asset/social/ico-linkedin.svg" alt=""></a>
       </div>
-      <p>⚒️Crafted by Jay Dinh, 2024</p>
+      <p>⚒️By Jay Dinh, 2024</p>
     </div>
   </footer>
       `;

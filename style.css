@@ -636,6 +636,11 @@ figcaption::before {
   margin-top: 30px;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 440px) {
+  .grid-container-3column.other-projects {
+    grid-template-rows: auto auto auto;
+  }
+}
 .btn:hover {
   transform: scale(105%) rotate(-3deg);
 }
